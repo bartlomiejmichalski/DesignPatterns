@@ -8,3 +8,8 @@ Each design pattern is related to a separate video from our YouTube channel.
 
 Każdy wzorzec jest powiązany z osobnym filmem z naszego kanału YouTube.
 
+Playlista na YT: [link](https://www.youtube.com/playlist?list=PLJho1cqKni7MpdrsKJIDSFF2_Qot8ffbu)
+
+## Zestawienie
+
+1. [Refaktoryzacja do strategii](./Strategy/README.md)
