@@ -1,3 +1,5 @@
+using Strategy.Main.Salary;
+
 namespace Strategy.Main
 {
     public class Employee

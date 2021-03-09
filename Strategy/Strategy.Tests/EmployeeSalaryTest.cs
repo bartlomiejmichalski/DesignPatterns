@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Strategy.Main;
+using Strategy.Main.Salary;
 
 namespace Strategy.Tests
 {
