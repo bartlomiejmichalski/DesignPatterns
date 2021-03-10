@@ -11,7 +11,7 @@ namespace Strategy.Tests
         public void ShouldCalculateSalaryForCeo()
         {
             // given
-            var employee = new Employee(EmployeeType.CEO, new CEOStrategy());
+            var employee = EmployeeFactory.CreateCEO();
             // when
             var salary = employee.CalculateNewSalary(100, 100, 1, 2);
             // then
@@ -22,7 +22,7 @@ namespace Strategy.Tests
         public void ShouldCalculateSalaryForSales()
         {
             // given
-            var employee = new Employee(EmployeeType.Sales, new SalesStrategy());
+            var employee = EmployeeFactory.CreateSales();
             // when
             double salary = employee.CalculateNewSalary(100, 100, 1, 2);
             // then
@@ -33,7 +33,7 @@ namespace Strategy.Tests
         public void ShouldCalculateSalaryForWorker()
         {
             // given
-            var employee = new Employee(EmployeeType.Worker, new WorkerStrategy());
+            var employee = EmployeeFactory.CreateWorker();
             // when
             double salary = employee.CalculateNewSalary(100, 100, 1, 2);
             // then

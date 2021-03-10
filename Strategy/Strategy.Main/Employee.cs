@@ -11,9 +11,17 @@ namespace Strategy.Main
             _salaryStrategy = salaryStrategy;
         }
 
-        public double CalculateNewSalary(double @base, double sumOfIncomes, double employeeIncome, double importantCalculationFactor)
+        public double CalculateNewSalary(
+            double @base, 
+            double sumOfIncomes, 
+            double employeeIncome, 
+            double importantCalculationFactor)
         {
-            return _salaryStrategy.Calculate(@base, sumOfIncomes, employeeIncome, importantCalculationFactor);
+            return _salaryStrategy.Calculate(
+                @base, 
+                sumOfIncomes, 
+                employeeIncome, 
+                importantCalculationFactor);
         }
 
         public EmployeeType Type { get; private set; }
