@@ -5,6 +5,13 @@ namespace Strategy.Main
 {
     public class BusinessLogic
     {
+        private ISalaryStrategyFactory _salaryStrategyFactory;
+
+        public BusinessLogic(ISalaryStrategyFactory salaryStrategyFactory)
+        {
+            _salaryStrategyFactory = salaryStrategyFactory;
+        }
+
         public void CalculateWorkersSalary(
             int numberOfWorkers, 
             double @base, 
@@ -12,7 +19,7 @@ namespace Strategy.Main
             double employeeIncome, 
             double importantCalculationFactor)
         {
-            ISalaryStrategy salaryStrategy = new WorkerStrategy();
+            ISalaryStrategy salaryStrategy = _salaryStrategyFactory.CreateStrategy();
             var newSalary = salaryStrategy.Calculate(
                 @base, 
                 sumOfIncomes, 

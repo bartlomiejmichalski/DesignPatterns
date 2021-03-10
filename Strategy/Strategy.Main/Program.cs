@@ -6,7 +6,7 @@ namespace Strategy.Main
     {
         static void Main(string[] args)
         {
-            new BusinessLogic().CalculateWorkersSalary(100, 100, 100, 1, 2);
+            new BusinessLogic(new CEOSalaryStrategyFactory()).CalculateWorkersSalary(100, 100, 100, 1, 2);
         }
     }
 }
