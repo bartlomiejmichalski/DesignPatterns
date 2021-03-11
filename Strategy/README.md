@@ -22,7 +22,7 @@ dotnet test
 
 Link do filmiku opisującego wzorzec: [link](https://youtu.be/aHquQLdGMnY)
 
-Link do filmiku prezentującego refaktoryzację: [link]()
+Link do filmiku prezentującego refaktoryzację: [link](https://youtu.be/dXgpFzHOmVA)
 
 ## Po refaktoryzacją 
 
